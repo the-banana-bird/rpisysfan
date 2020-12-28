@@ -1,0 +1,10 @@
+[Unit]
+Description=System fan controller
+
+[Service]
+Type=simple
+ExecStart=/home/pi/rpisysfan/rpisysfan
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
